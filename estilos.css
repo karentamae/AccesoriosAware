@@ -7,12 +7,15 @@
 body {
     width: 100%;
     background-color: #e8c39e;
+    background-image: linear-gradient(to bottom, #e8c39e, #eed4bb);
     font-size: 1.25rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.5;
     overflow-x: hidden;
 }
+
+
 
 a {
     text-decoration: none;
@@ -23,23 +26,51 @@ a {
     padding: 0;
     box-sizing: border-box;
     height: 10%;
+    width: 100%;
     background-color: white;
     opacity: 80%;
     position: sticky;
     top: 0;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-content: space-around;
     align-items: center;
 }
 
 .header nav ul {
     list-style-type: none;
-    text-align: right;
+    
 }
 
 .header nav ul li {
     display: inline-block;
+    align-content: space-around;
+    padding: 15px;
+}
+
+.logo {
+    padding-left: 25px;
+}
+
+.inicio:hover {
+    transform: scale(1.1);
+}
+
+.sobreAware:hover {
+    transform: scale(1.1);
+}
+
+.productosNav:hover {
+    transform: scale(1.1);
+}
+
+.promocionesNav:hover {
+    transform: scale(1.1);
+}
+
+.contacto:hover {
+    transform: scale(1.1);
 }
 
 h2 {
