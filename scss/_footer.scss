@@ -1,0 +1,16 @@
+footer {
+    height: 150px;
+    background-image: url(/Img/sakura.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    border: solid 5px rgb(224, 181, 164);
+    padding: 50px 100px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}

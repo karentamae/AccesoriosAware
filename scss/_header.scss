@@ -1,0 +1,52 @@
+.header { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    opacity: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+
+    nav ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            align-content: space-around;
+            padding: 15px;
+        }
+        
+    }
+}
+
+.logo {
+    padding-left: 25px;
+}
+
+.inicio:hover {
+    transform: scale(1.1);
+}
+
+.sobreAware:hover {
+    transform: scale(1.1);
+}
+
+.productosNav:hover {
+    transform: scale(1.1);
+}
+
+.promocionesNav:hover {
+    transform: scale(1.1);
+}
+
+.contacto:hover {
+    transform: scale(1.1);
+}

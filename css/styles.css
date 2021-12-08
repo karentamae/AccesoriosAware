@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  background-color: #e8c39e;
+  background-image: linear-gradient(to bottom, #e8c39e, #eed4bb);
+  font-size: 1.25rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  opacity: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center; }
+  .header nav ul {
+    list-style-type: none; }
+    .header nav ul li {
+      display: inline-block;
+      align-content: space-around;
+      padding: 15px; }
+
+.logo {
+  padding-left: 25px; }
+
+.inicio:hover {
+  transform: scale(1.1); }
+
+.sobreAware:hover {
+  transform: scale(1.1); }
+
+.productosNav:hover {
+  transform: scale(1.1); }
+
+.promocionesNav:hover {
+  transform: scale(1.1); }
+
+.contacto:hover {
+  transform: scale(1.1); }
+
+h2 {
+  font-size: 1.875rem;
+  font-family: 'Cinzel', serif;
+  color: whitesmoke;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+h3 {
+  font-size: 1,5625rem;
+  font-family: 'Cinzel', serif;
+  color: whitesmoke;
+  margin: 20px;
+  padding: 20px; }
+
+p {
+  color: whitesmoke;
+  text-align: justify;
+  margin: 20px;
+  padding: 20px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center; }
+
+.video {
+  margin: 20px;
+  padding-left: 25%; }
+
+.loUltimo, .publicacionesInstagram, .productos, .promociones {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  flex-shrink: 1;
+  margin: 20px;
+  padding: 20px; }
+
+.publicacionesInstagram {
+  width: 95%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly; }
+
+.cadenaFriends, .pulsera1, .holder1, .holderMulticolor, .holderNegro, .holderOjo, .pulseraAvion, .pulseraOjo, .pulserasVarias, .cadenaCorona, .cadenaEstrella, .cadenaMano, .chokerLuna, .chokerMulticolor, .holder2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  align-self: baseline; }
+
+fieldset {
+  font-family: 'Raleway', sans-serif;
+  margin: 20px;
+  padding: 20px; }
+
+legend {
+  font-family: 'Raleway', sans-serif;
+  color: whitesmoke;
+  margin: 20px;
+  padding: 20px; }
+
+label {
+  font-family: 'Raleway', sans-serif;
+  color: #d16f48;
+  margin: 20px;
+  padding: 20px; }
+
+footer {
+  height: 150px;
+  background-image: url(/Img/sakura.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  border: solid 5px #e0b5a4;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+@media screen and (max-width: 1023px) {
+  .header {
+    width: 100vw;
+    top: auto; }
+    .header nav ul {
+      padding-right: 20px; }
+      .header nav ul li {
+        font-size: medium; }
+  .video {
+    width: 100%;
+    height: 100%; }
+  .publicacionesInstagram {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end; } }
+
+@media screen and (max-width: 1023px) and (max-width: 808px) {
+  .header {
+    width: 100vw;
+    top: auto; }
+    .header nav ul {
+      padding-right: 50px; }
+      .header nav ul li {
+        font-size: x-small; }
+  .video {
+    width: 100%;
+    height: 100%; }
+  .publicacionesInstagram {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start; }
+  footer {
+    height: 150px;
+    flex-flow: nowrap;
+    font-size: x-small;
+    padding: 10%; } }
+
+@media screen and (max-width: 1023px) and (max-width: 479px) {
+  .video {
+    width: 100%;
+    height: 100%; }
+  .header {
+    width: 100vw;
+    top: auto; }
+    .header nav ul li {
+      font-size: x-small; }
+  .publicacionesInstagram {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start; }
+  .grid {
+    display: flex;
+    flex-flow: row wrap; }
+  footer {
+    font-size: xx-small; } }
