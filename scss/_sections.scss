@@ -10,7 +10,7 @@
     padding-left: 25%;
 }
 
-.loUltimo,  .publicacionesInstagram, .productos, .promociones {
+.loUltimo {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -23,19 +23,80 @@
 }
 
 .publicacionesInstagram {
+    @extend .loUltimo;
     width: 90%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-items: center;
     justify-content: space-evenly;
 }
 
-.cadenaFriends, .pulsera1, .holder1, .holderMulticolor, .holderNegro, .holderOjo, .pulseraAvion, .pulseraOjo, .pulserasVarias, .cadenaCorona, .cadenaEstrella, .cadenaMano, .chokerLuna, .chokerMulticolor, .holder2 {
+.productos {
+    @extend .loUltimo;
+}
+
+.promociones {
+    @extend .loUltimo;
+}
+
+.cadenaFriends {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
     align-self: baseline;
+}
+
+.pulsera1 {
+    @extend .cadenaFriends;
+}
+
+.holder1 {
+    @extend .cadenaFriends
+}
+
+.holderMulticolor {
+    @extend .cadenaFriends;
+}
+
+.holderNegro {
+    @extend .cadenaFriends;
+}
+
+.holderOjo {
+    @extend .cadenaFriends;
+}
+
+.pulseraAvion {
+    @extend .cadenaFriends;
+}
+
+.pulseraOjo {
+    @extend .cadenaFriends;
+}
+
+.pulserasVarias {
+    @extend .cadenaFriends;
+}
+
+.cadenaCorona {
+    @extend .cadenaFriends;
+}
+
+.cadenaEstrella {
+    @extend .cadenaFriends;
+}
+
+.cadenaMano {
+    @extend .cadenaFriends;
+}
+
+.chokerLuna {
+    @extend .cadenaFriends;
+}
+
+.chokerMulticolor {
+    @extend .cadenaFriends;
+}
+
+.holder2 {
+    @extend .cadenaFriends;
 }

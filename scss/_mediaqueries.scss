@@ -6,11 +6,21 @@
 
         nav ul {
             padding-right: 20px;
+            padding-left: 20px;
     
         li {
             font-size: medium;
+            margin-right: 0px;
+            align-content: space-around;
         }
      }
+
+    .logo {
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+     
     }
 
     .video {
@@ -27,19 +37,29 @@
 
 @media screen and (max-width:808px) {
 
+    * {
+        margin-right: 0px;
+        padding-right: 0px;
+        overflow-x: hidden;
+    }
+
 .header { 
             width: 100vw;
             top: auto;
 
             nav ul {
-                padding-right: 50px;
+                padding-right: 0px;
+                margin-right: 0px;
 
                 li {
                     font-size: x-small;
                 }
             }
+        } 
+        
+        .logo {
+            margin-right: 25px;
         }
-    
     
 .video {
     width: 100%;
@@ -51,6 +71,8 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
+        margin: 0px;
+        padding: 0px;
         }
    
         footer {
@@ -64,6 +86,13 @@
 }
 
 @media screen and (max-width:479px) {
+
+    * {
+        margin-right: 0px;
+        padding-right: 0px;
+        overflow-x: hidden;
+    }
+    
     .video {
                 width: 100%;
                 height: 100%;
@@ -74,16 +103,22 @@
                 top: auto;
 
                 nav ul li {
-                    font-size: x-small;
-                }
+                    font-size:xx-small;
             }
         
+    .logo {
+        margin-right: 20px;
+    }
+
     .publicacionesInstagram {
-            width: 30%;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: flex-start;
-            }
+        width: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+        }
 
     .grid {
         display: flex;
@@ -95,4 +130,6 @@
         padding: 10px;
     }
 }
+}
+
 }

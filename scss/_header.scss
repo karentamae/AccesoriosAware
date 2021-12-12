@@ -11,24 +11,22 @@
     z-index: 1;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-around;
     align-items: center;
 
     nav ul {
         list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    
 
         li {
             display: inline-block;
-            align-content: space-around;
-            padding: 15px;
+            padding-right: 10px;
         }
         
     }
-}
-
-.logo {
-    padding-left: 25px;
 }
 
 .inicio:hover {

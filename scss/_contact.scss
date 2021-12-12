@@ -5,15 +5,11 @@ fieldset {
 }
 
 legend {
-    font-family: 'Raleway', sans-serif;
+    @extend fieldset ;
     color: whitesmoke;
-    margin: 20px;
-    padding: 20px;
 }
 
 label {
-    font-family: 'Raleway', sans-serif;
+    @extend fieldset ;
     color: rgb(209, 111, 72);
-    margin: 20px;
-    padding: 20px;
 }

@@ -1,24 +1,25 @@
+@mixin marpad($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
 h2 {
+    @include marpad(20px, 20px);
     font-size: 1.875rem;
     font-family: 'Cinzel', serif;
     color: whitesmoke;
-    margin: 20px;
-    padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
+    overflow-y: hidden
 }
 
 h3 {
+    @extend h2 ;
     font-size: 1,5625rem;
-    font-family:  'Cinzel', serif;
-    color: whitesmoke;
-    margin: 20px;
-    padding: 20px;
 }
 
 p {
     color: whitesmoke;
     text-align: justify;
-    margin: 20px;
-    padding: 20px;
+@include marpad(20px, 20px);
 }
