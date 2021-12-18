@@ -3,19 +3,34 @@
     padding: $padding;
 }
 
-h2 {
+h1 {
     @include marpad(20px, 20px);
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-family: 'Cinzel', serif;
     color: whitesmoke;
+    font-weight: bold;
     padding-top: 0px;
     padding-bottom: 0px;
-    overflow-y: hidden
+    overflow-y: hidden;
+    text-align: center
+}
+
+h2 {
+    @extend h1 ;
+    font-size: 1.875rem;
+    font-weight: lighter;
+    padding-top: 100px;
+
+    .seccionContacto {
+    padding-top: 0px !important;
+}
 }
 
 h3 {
-    @extend h2 ;
+    @extend h1 ;
     font-size: 1,5625rem;
+    font-weight: lighter;
+
 }
 
 p {

@@ -11,29 +11,43 @@
 }
 
 .loUltimo {
+width: 70%;
+padding-left: 30%;
+}
+
+.publicacionesInstagram {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 1;
+    margin: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 28%;
+    width: 90%;
+}
+
+.quienessomos {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.productos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin-top: 20px;
     flex-shrink: 1;
     margin: 20px;
     padding: 20px;
-}
-
-.publicacionesInstagram {
-    @extend .loUltimo;
-    width: 90%;
-    justify-content: space-evenly;
-}
-
-.productos {
-    @extend .loUltimo;
+    padding-top: 20px;
 }
 
 .promociones {
-    @extend .loUltimo;
+    @extend .productos;
+    padding-top: 20px;
 }
 
 .cadenaFriends {
